@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="a">A</string>
+    <string name="d">D</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="pressed">"Presseed: "</string>
 </resources>
