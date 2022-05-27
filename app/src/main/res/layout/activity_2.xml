@@ -39,7 +39,8 @@
             android:onClick="onBtnClicked"
             android:text="@string/d"
             app:layout_column="0"
-            app:layout_row="1" />
+            app:layout_row="1"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button18"
@@ -92,7 +93,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginBottom="276dp"
-        android:text="Pressed: "
+        android:text="@string/pressed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/gridLayout2" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+
+        android:onClick="goBack"
+        android:text="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

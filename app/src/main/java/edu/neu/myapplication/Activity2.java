@@ -17,6 +17,7 @@ public class Activity2 extends AppCompatActivity {
     private Button button19;
     private Button button20;
     private Button button21;
+    private Button button22;
     private TextView tv2;
 
 
@@ -33,6 +34,7 @@ public class Activity2 extends AppCompatActivity {
         button19 = (Button)findViewById(R.id.button19);
         button20 = (Button)findViewById(R.id.button20);
         button21 = (Button)findViewById(R.id.button21);
+        button22 = (Button)findViewById(R.id.button22);
 
         tv2 = (TextView) findViewById(R.id.textView2);
     }
@@ -40,6 +42,10 @@ public class Activity2 extends AppCompatActivity {
     public void onBtnClicked(View v){
         v.getId();
         tv2.setText("Pressed: " + ((Button)v).getText());
+    }
+
+    public void goBack(View v){
+        super.onBackPressed();
     }
 
 

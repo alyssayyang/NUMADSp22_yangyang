@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private Button button3;
 
     @Override
@@ -26,24 +27,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActicity2();
-            }
-        });
 
+        button3 = (Button) findViewById(R.id.button3);
+
+        button3.setOnClickListener(v -> openActicity2());
 
     }
 
     public void displayToastMsg(String msg){
         Toast toast = Toast.makeText(this,msg,Toast.LENGTH_LONG);
-        //toast.setGravity(Gravity.FILL_HORIZONTAL,0,0);
         toast.show();
     }
 
-    public void intro(View v){
+    public void introme(View v){
         displayToastMsg("YANG YANG \nyang.yang16@northeastern.edu");
     }
 

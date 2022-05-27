@@ -8,12 +8,12 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="341dp"
         android:layout_marginBottom="38dp"
-        android:onClick="intro"
-        android:text="About me"
+        android:onClick="introme"
+        android:text="@string/about_me"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="@+id/button3"
         app:layout_constraintStart_toStartOf="@+id/button3"
@@ -22,9 +22,9 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="255dp"
-        android:text="Clicky Clicky"
+        android:text="@string/clicky_clicky"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
