@@ -8,10 +8,10 @@ package edu.neu.myapplication;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.content.Intent;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ConstraintLayout myCL = new ConstraintLayout(this);
 
         button3 = (Button) findViewById(R.id.button3);
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayToastMsg(String msg){
-        Toast toast = Toast.makeText(this,msg,Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
         toast.show();
     }
 

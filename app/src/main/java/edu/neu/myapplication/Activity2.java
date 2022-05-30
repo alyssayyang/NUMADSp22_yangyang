@@ -1,6 +1,7 @@
 package edu.neu.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 
 public class Activity2 extends AppCompatActivity {
 
-    private GridLayout g;
+    private GridLayout gl;
     private Button button15;
     private Button button17;
     private Button button18;
@@ -25,8 +26,13 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+        ConstraintLayout myCL2 = new ConstraintLayout(this);
 
-        g = (GridLayout) findViewById(R.id.gridLayout2);
+
+
+        gl = (GridLayout) findViewById(R.id.gridLayout2);
+      //  gl.set
+
 
         button15 = (Button)findViewById(R.id.button15);
         button17 = (Button)findViewById(R.id.button17);
@@ -37,6 +43,8 @@ public class Activity2 extends AppCompatActivity {
         button22 = (Button)findViewById(R.id.button22);
 
         tv2 = (TextView) findViewById(R.id.textView2);
+
+        //setContentView(myCL2);
     }
 
     public void onBtnClicked(View v){
