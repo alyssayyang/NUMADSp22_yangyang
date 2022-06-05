@@ -11,4 +11,8 @@
     <string name="clicky_clicky">Clicky Clicky</string>
     <string name="press">press</string>
     <string name="back">Back</string>
+    <string name="text">text</string>
+    <string name="link_collector">Link Collector</string>
+
+
 </resources>

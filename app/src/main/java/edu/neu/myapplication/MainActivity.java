@@ -12,15 +12,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.content.Intent;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
 
 
-    private Button button3;
+
+    private Button button_1;
+    private Button button_2;
+    private Button button_3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,25 +31,35 @@ public class MainActivity extends AppCompatActivity {
 
         ConstraintLayout myCL = new ConstraintLayout(this);
 
-        button3 = (Button) findViewById(R.id.button3);
+        button_1 = (Button) findViewById(R.id.button_1);
+        button_2 = (Button) findViewById(R.id.button_2);
+        button_3 = (Button) findViewById(R.id.button_3);
 
-        button3.setOnClickListener(v -> openActicity2());
+
+        button_1.setOnClickListener(v -> openActivity1());
+        button_2.setOnClickListener(v -> openActivity2());
+        button_3.setOnClickListener(v -> openActivity3());
 
     }
 
-    public void displayToastMsg(String msg){
-        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
-        toast.show();
+
+    public void openActivity1(){
+        Intent intent = new Intent(this,Activity1.class);
+        startActivity(intent);
     }
 
-    public void introme(View v){
-        displayToastMsg("YANG YANG \nyang.yang16@northeastern.edu");
-    }
-
-    public void openActicity2(){
+    public void openActivity2(){
         Intent intent = new Intent(this,Activity2.class);
         startActivity(intent);
     }
+
+    public void openActivity3(){
+        Intent intent = new Intent(this,Activity3.class);
+        startActivity(intent);
+    }
+
+    
+
 
 
 }

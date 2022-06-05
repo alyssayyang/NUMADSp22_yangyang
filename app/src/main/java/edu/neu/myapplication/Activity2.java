@@ -31,7 +31,7 @@ public class Activity2 extends AppCompatActivity {
 
 
         gl = (GridLayout) findViewById(R.id.gridLayout2);
-      //  gl.set
+
 
 
         button15 = (Button)findViewById(R.id.button15);
