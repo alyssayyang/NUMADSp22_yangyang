@@ -13,6 +13,9 @@
     <string name="back">Back</string>
     <string name="text">text</string>
     <string name="link_collector">Link Collector</string>
+    <string name="url">url</string>
+    <string name="name">name</string>
+    <string name="todo">TODO</string>
 
 
 </resources>

@@ -9,15 +9,18 @@ package edu.neu.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.content.Intent;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
-
-
 
     private Button button_1;
     private Button button_2;
@@ -36,11 +39,14 @@ public class MainActivity extends AppCompatActivity {
         button_3 = (Button) findViewById(R.id.button_3);
 
 
+
         button_1.setOnClickListener(v -> openActivity1());
         button_2.setOnClickListener(v -> openActivity2());
         button_3.setOnClickListener(v -> openActivity3());
 
+
     }
+
 
 
     public void openActivity1(){
