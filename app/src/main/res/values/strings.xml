@@ -16,6 +16,11 @@
     <string name="url">url</string>
     <string name="name">name</string>
     <string name="todo">TODO</string>
+    <string name="url_name">URL name</string>
+    <string name="url_link">URL</string>
+    <string name="button">Button</string>
+    <string name="cancel">CANCEL</string>
+    <string name="confirm">CONFIRM</string>
 
 
 </resources>

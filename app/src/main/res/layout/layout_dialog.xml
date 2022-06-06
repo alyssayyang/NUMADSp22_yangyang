@@ -10,18 +10,42 @@
         android:id="@+id/url_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="URL name" />
+        android:hint="@string/url_name"
+        android:inputType="text"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/url_link"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/url_name"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="2dp"
         android:layout_marginTop="43dp"
-        android:hint="URL" />
+        android:hint="@string/url_link"
+        android:inputType="textUri"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="122dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="122dp"
+        android:text="@string/confirm" />
 
 
 </RelativeLayout>
