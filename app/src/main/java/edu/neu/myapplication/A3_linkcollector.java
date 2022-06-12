@@ -15,10 +15,10 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
-public class Activity3 extends AppCompatActivity {
+public class A3_linkcollector extends AppCompatActivity {
 
     //linkslist: whatever info we stored is in linkslist
-    ArrayList<links> linkslist;
+    ArrayList<Link> linkslist;
     RecyclerView recyclerView;
     RecyclerView.Adapter recyclerAdapter;
     FloatingActionButton enterNewLink;
@@ -27,7 +27,7 @@ public class Activity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_3);
+        setContentView(R.layout.a3_linkcollector);
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -36,14 +36,10 @@ public class Activity3 extends AppCompatActivity {
         enterNewLink = findViewById(R.id.enterNewLink);
         //initialize list here
         linkslist = new ArrayList<>();
-//        linkslist.add(new links("google","www.google.com"));
-//        linkslist.add(new links("google","www.google.com"));
-//        linkslist.add(new links("google","www.google.com"));
         recyclerAdapter = new recyclerAdapter(linkslist, this);
         recyclerView.setAdapter(recyclerAdapter);
 
         enterNewLink.setOnClickListener(new View.OnClickListener() {
-            //when the button is clicked, call alertdialog
             @Override
             public void onClick(View view) {
                 alertDialog();
@@ -73,9 +69,9 @@ public class Activity3 extends AppCompatActivity {
                 String name = editName.getText().toString();
                 String URL = "https://" + editURL.getText().toString();
 
-                links mylink = new links(name, URL);
+                Link mylink = new Link(name, URL);
                 linkslist.add(mylink);
-                //
+
                 recyclerView.setAdapter(recyclerView.getAdapter());
 
                 Snackbar snackbar = Snackbar.make(recyclerView, "A link is added", Snackbar.LENGTH_LONG).setAction("UNDO", new View.OnClickListener() {
@@ -86,8 +82,10 @@ public class Activity3 extends AppCompatActivity {
                     }
                 });
                 snackbar.show();
-//
-                alertDialog.hide();
+                //edit at 8:28pm
+                //alertDialog.hide();
+                alertDialog.dismiss();
+
             }
         });
 

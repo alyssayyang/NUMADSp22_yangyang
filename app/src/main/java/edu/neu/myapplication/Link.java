@@ -1,11 +1,11 @@
 package edu.neu.myapplication;
 
-public class links {
+public class Link {
 
     private String linkname;
     private String linkurl;
 
-    public links(String name, String url){
+    public Link(String name, String url){
         this.linkname = name;
         this.linkurl = url;
     }

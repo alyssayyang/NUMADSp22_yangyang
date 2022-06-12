@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
-public class Activity2 extends AppCompatActivity {
+public class A2_clickyclicky extends AppCompatActivity {
 
     private GridLayout gl;
     private Button button15;
@@ -25,7 +25,7 @@ public class Activity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.a2_clickyclicky);
         ConstraintLayout myCL2 = new ConstraintLayout(this);
 
 
