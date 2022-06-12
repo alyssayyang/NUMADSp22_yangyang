@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="edu.neu.myapplication">
 
     <application
@@ -11,23 +13,31 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
-            android:name=".Activity1"
+            android:name=".A1_aboutme"
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Activity2"
+            android:name=".A2_clickyclicky"
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".Activity3"
+            android:name=".A3_linkcollector"
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".A4_primenumber"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MainActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
