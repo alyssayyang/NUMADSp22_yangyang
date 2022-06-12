@@ -11,16 +11,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyViewHolder> {
 
-    private final ArrayList<links> linkslist;
+    private final ArrayList<Link> linkslist;
     private final Context context;
 
     //when we want to instantiate a recycleradapter object, we need to pass a list
-    public recyclerAdapter(ArrayList<links> linkslist, Context context){
+    public recyclerAdapter(ArrayList<Link> linkslist, Context context){
         //now the linkslist field is updated to the passed in linkslist
         this.linkslist=linkslist;
         this.context = context;
@@ -40,7 +39,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
         }
 
         //added 4:54pm june6
-        public void bindThisData(links thelinktobind){
+        public void bindThisData(Link thelinktobind){
             nametxt.setText(thelinktobind.getLinkname());
             urltxt.setText(thelinktobind.getLinkurl());
         }
@@ -50,7 +49,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
     @Override
     public recyclerAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //here list_items layout is passed to viewholder
-        View itemView = LayoutInflater.from(context).inflate(R.layout.list_items,parent,false);
+        View itemView = LayoutInflater.from(context).inflate(R.layout.list_item,parent,false);
         return new MyViewHolder(itemView);
     }
 
@@ -78,7 +77,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
     }
 
 //add on 6:06pm june 6
-    public links getItem(int i){
+    public Link getItem(int i){
         return linkslist.get(i);
     }
 
