@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/latitude"
+        app:layout_constraintBottom_toTopOf="@+id/tv_longitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/longitude"
+        app:layout_constraintBottom_toTopOf="@+id/tv_totalDistance"
+        app:layout_constraintStart_toStartOf="@+id/tv_latitude"
+        app:layout_constraintTop_toBottomOf="@+id/tv_latitude" />
+
+    <TextView
+        android:id="@+id/tv_totalDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/total_distance"
+        app:layout_constraintBottom_toTopOf="@+id/tv_accuracy"
+        app:layout_constraintStart_toStartOf="@+id/tv_longitude"
+        app:layout_constraintTop_toBottomOf="@+id/tv_longitude" />
+
+    <Switch
+        android:id="@+id/sw_changePrecision"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/c_precision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_accuracy" />
+
+    <Button
+        android:id="@+id/bt_resetDistance"
+        android:layout_width="184dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/reset_distance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/accuracy"
+        app:layout_constraintBottom_toTopOf="@+id/sw_changePrecision"
+        app:layout_constraintStart_toStartOf="@+id/tv_totalDistance"
+        app:layout_constraintTop_toBottomOf="@+id/tv_totalDistance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

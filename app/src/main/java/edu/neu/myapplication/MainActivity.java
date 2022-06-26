@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private Button button_2;
     private Button button_3;
     private Button button_4;
+    private Button button_5;
+    private Button button_6;
 
 
     @Override
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         button_2 = (Button) findViewById(R.id.button_2);
         button_3 = (Button) findViewById(R.id.button_3);
         button_4 = (Button) findViewById(R.id.button_4);
+        button_5 = (Button) findViewById(R.id.button_5);
+        button_6 = (Button) findViewById(R.id.button_6);
 
 
 
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         button_2.setOnClickListener(v -> openActivity2());
         button_3.setOnClickListener(v -> openActivity3());
         button_4.setOnClickListener(v -> openActivity4());
+        button_5.setOnClickListener(v -> openActivity5());
+        button_6.setOnClickListener(v -> openActivity6());
 
 
     }
@@ -64,7 +70,17 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, A4_primenumber.class);
         startActivity(intent);
     }
-    
+
+    public void openActivity5(){
+        Intent intent = new Intent(this, A5_location.class);
+        startActivity(intent);
+    }
+
+    public void openActivity6(){
+        Intent intent = new Intent(this, A6_weather.class);
+        startActivity(intent);
+    }
+
 
 
 
